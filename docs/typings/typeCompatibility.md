@@ -387,7 +387,7 @@ let catArr: Cat[] = [cat];
 // 明显的坏处，逆变
 // Animal <= Cat
 // Animal[] >= Cat[]
-catArr = animalArr; // ok, 如有有逆变
+catArr = animalArr; // ERROR: 不能将类型“Animal”分配给类型“Cat”
 catArr[0].meow(); // 允许，但是会在运行时报错
 
 // 另外一个坏处，协变
